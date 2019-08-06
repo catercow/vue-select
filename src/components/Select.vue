@@ -4,7 +4,7 @@
 
 <template>
   <div :dir="dir" class="v-select" :class="stateClasses">
-    <div ref="toggle" @mousedown.prevent="toggleDropdown" class="vs__dropdown-toggle">
+    <div ref="toggle" class="vs__dropdown-toggle">
 
       <div class="vs__selected-options" ref="selectedOptions">
         <slot v-for="option in selectedValue"
